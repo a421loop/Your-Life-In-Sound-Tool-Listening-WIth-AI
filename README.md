@@ -130,7 +130,7 @@ Verify the Teachable Machine URL ends with a `/` and contains `model.json` and `
 
 ## Credits
 
-Made with 💜 by Sarena, inspired by Professor Wirfs-Brock, with debugging help from Claude
+Inspired and edited by Professor Wirfs-Brock, made with 💜 by Sarena, with debugging help from Claude
 
 ## License
 
