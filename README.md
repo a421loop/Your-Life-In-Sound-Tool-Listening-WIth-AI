@@ -1,6 +1,10 @@
 # Listening with AI
 
-A web-based tool for exploring machine listening through custom-trained audio classification models.
+A web-based tool for exploring listening with AI through custom-trained audio classification models. Load your trained Teachable Machine audio model and watch it classify sounds in real-time.
+
+## What It Does
+
+Shows you what your audio classification model detects, how confident it is, and logs all predictions with timestamps.
 
 ## Overview
 
