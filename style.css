@@ -113,9 +113,14 @@ button {
     margin-bottom: 10px;
 }
 
+.button-container {
+    text-align: center;
+}
+
 button:hover {
     background: #a04ee8;
 }
+
 
 button:disabled {
     background: #ccc;
