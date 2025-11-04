@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listening with AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Listening with AI</h1>
+            <p class="subtitle">When a machine listens back</p>
+        </header>
+
+        <div class="section">
+            <div class="section-title">How to use this tool</div>
+            <div class="instructions">
+                <ol>
+                    <li>Train an audio model at <a href="https://teachablemachine.withgoogle.com/" target="_blank">Teachable Machine</a></li>
+                    <li>Export it: TensorFlow.js → Upload → Shareable Link</li>
+                    <li>Paste the link below</li>
+                    <li>Click "Load My Model" and allow microphone access</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="input-group">
+                <label for="modelUrl">Your Teachable Machine Model URL</label>
+                <input type="text" id="modelUrl" placeholder="https://teachablemachine.withgoogle.com/models/...">
+            </div>
+            <button id="loadBtn">Load My Model</button>
+            <button id="stopBtn" class="secondary hidden">Stop Listening</button>
+            <div id="status"></div>
+        </div>
+
+        <div id="visualizer">
+            <div class="label">Waiting for model...</div>
+            <div class="confidence"></div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Detection Log</div>
+            <button id="saveLogBtn" class="secondary" disabled>Save Detection Log</button>
+            <button id="clearLogBtn" class="secondary">Clear Log</button>
+            <div class="log-container">
+                <div id="log"></div>
+            </div>
+        </div>
+
+        <footer>
+            Made with 💜 by Sarena, Professor Jordan, with debugging help from Claude
+        </footer>
+    </div>
+
+    <!-- Load TensorFlow.js and Speech Commands -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands@latest"></script>
+    <script src="script.js"></script>
+</body>
+</html>
