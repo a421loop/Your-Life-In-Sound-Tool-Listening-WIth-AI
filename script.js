@@ -44,11 +44,11 @@ function updateVisualizer(label, confidence) {
 
 // Color interpolation based on confidence
 function interpolateColor(confidence) {
-    // Low confidence: white
-    // High confidence: light purple #B564F7
-    const lowColor = [255, 255, 255];
-    const highColor = [230, 210, 250]; // light version of #B564F7
-    
+    // Low confidence: reddish
+    // High confidence: lavender
+    const lowColor = [250, 210, 210];   // #FAD2D2
+    const highColor = [230, 210, 250];  // #E6D2FA
+   
     const r = Math.round(lowColor[0] + (highColor[0] - lowColor[0]) * confidence);
     const g = Math.round(lowColor[1] + (highColor[1] - lowColor[1]) * confidence);
     const b = Math.round(lowColor[2] + (highColor[2] - lowColor[2]) * confidence);
