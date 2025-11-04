@@ -116,13 +116,9 @@ Requires:
 - ES6 JavaScript support
 - HTTPS (for microphone permissions)
 
-Tested on Chrome, Firefox, Edge.
+Tested on Brave, Chrome and Safari.
 
 ## Troubleshooting
-
-### "speechCommands is not defined"
-
-This occurs in sandboxed environments like the p5.js editor. Host the files on GitHub Pages, Glitch, or locally instead.
 
 ### Microphone access denied
 
@@ -131,14 +127,6 @@ Check browser permissions. The page must be served over HTTPS (except for localh
 ### Model fails to load
 
 Verify the Teachable Machine URL ends with a `/` and contains `model.json` and `metadata.json`.
-
-### 404 on GitHub Pages
-
-Ensure:
-- Files are in root directory (not a subfolder)
-- File is named `index.html` (lowercase)
-- GitHub Pages is enabled in repository settings
-- Wait 1-2 minutes after enabling
 
 ## Credits
 
