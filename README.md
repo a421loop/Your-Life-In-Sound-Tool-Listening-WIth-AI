@@ -19,29 +19,6 @@ Students train audio models using Google's Teachable Machine, then paste their m
 └── script.js     # Functionality
 ```
 
-## Setup
-
-### Option 1: GitHub Pages
-
-1. Create a new repository
-2. Upload all three files to the root directory
-3. Go to Settings → Pages
-4. Source: Deploy from branch → main → / (root)
-5. Save and wait 1-2 minutes
-
-Your URL: `https://username.github.io/repo-name/`
-
-### Option 2: Glitch
-
-1. Go to glitch.com
-2. New Project → glitch-hello-website
-3. Delete existing files
-4. Upload index.html, style.css, script.js
-5. Click Show
-
-### Option 3: Local
-
-Open `index.html` directly in Chrome. Works immediately.
 
 ## Usage
 
@@ -52,7 +29,7 @@ Open `index.html` directly in Chrome. Works immediately.
 5. Allow microphone access
 6. Observe real-time detections
 
-## How Confidence Works
+## How the Confidence Score Works
 
 ### Model Output
 
